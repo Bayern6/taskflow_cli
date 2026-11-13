@@ -16,7 +16,7 @@ while True:
 
     ''')
 
-    option = int(input('Select an option between those 3: '))\
+    option = int(input('Select an option between those 3: '))
 
     clear_screen()
 
