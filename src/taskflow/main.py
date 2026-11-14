@@ -13,8 +13,7 @@ while True:
     [1] Add task
     [2] List all tasks
     [0] Exit
-
-    ''')
+''')
 
     option = int(input('Select an option between those 3: '))
 
