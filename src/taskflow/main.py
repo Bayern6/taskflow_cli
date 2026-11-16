@@ -26,7 +26,7 @@ while True:
     [0] Exit
 ''')
 
-    option = input('Select an option between those 3: ')
+    option = input('Select an option between those 3: ').strip()
 
     if option not in('0', '1', '2'):
         print('\n[Error] Invalid option! Try again...')
