@@ -4,6 +4,10 @@ import os
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
+task_list = []
+
+numeric_order = 1
+
 while True:
     clear_screen()
     print('''================
@@ -25,8 +29,9 @@ while True:
 ================
 Option selected: [1] Add task
 ''')
-        task = input('Type here what kind of task you want to add: ')
+        new_task = input('Type here what kind of task you want to add: ')
         print('Task added with successful!')
+        task_list.append(new_task)
         time.sleep(3)
 
     elif option == 2:
@@ -34,9 +39,12 @@ Option selected: [1] Add task
     TASKFLOW    
 ================
 Option selected: [2] List all tasks
-Task: {task};
 ''')
-        time.sleep(10)
+        task_list.sort()
+        for task in task_list:
+            print(f'Task {numeric_order}: {task}')
+            numeric_order += 1
+        time.sleep(5)
 
     elif option == 0:
         print(f'''================
