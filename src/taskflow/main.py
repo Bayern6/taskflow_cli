@@ -70,7 +70,7 @@ Option selected: [2] List all tasks
                     print(f'Task {index} - {task}')
 
 
-            go_back = input('\nType "g" to go back to the main menu: ')
+            go_back = input('\nType "g" to go back to the main menu: ').strip()
 
             if go_back.lower() == 'g':
                 print('\nGoing back to main menu...')
